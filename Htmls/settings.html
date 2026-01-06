@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соседи по Аду | Настройки</title>
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="/CSS/settings.css">
+    <link rel="stylesheet" href="/CSS/lava.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Лого -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../Images/Logo/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../Images/Logo/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../Images/Logo/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../Images/Logo/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../Images/Logo/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../Images/Logo/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../Images/Logo/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../Images/Logo/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Images/Logo/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../Images/Logo/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Images/Logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../Images/Logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Images/Logo/favicon-16x16.png">
+    <link rel="manifest" href="../Images/Logo/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <section id="lava-effect"></section>
+
+<main>
+        <div class="settings-container">
+            <div class="settings-content">
+                <div class="settings-header">
+                    <h1 class="settings-title">
+                        Настройки мира
+                    </h1>
+                </div>
+
+                <div class="settings-grid">
+                    <!-- Общие настройки -->
+                        <div class="settings-card" style="--delay: 1" id="general">
+                        <div class="settings-card-header">
+                            <div class="settings-card-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <h3 class="settings-card-title">Общие настройки</h3>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Сервер доступен
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> В сети
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Регион
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Россия
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Видимость сервера
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Только друзья
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Под защитой EAC
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Нет
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Кросс-платформа
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Выключена
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Пароль игры
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Нет
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Максимальное кол-во игроков
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> 16 человек
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Настройки сложности
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Бродяга
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Постоянные профили
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Выключена
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Коэффициент опыта
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> 125%
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> 24-часовой цикл
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> 40 минут
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Длительность светлого времени дня
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Часов 18
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Базовые настройки -->
+                    <div class="settings-card" style="--delay: 2" id="basic">
+                        <div class="settings-card-header">
+                            <div class="settings-card-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <h3 class="settings-card-title">Базовые настройки</h3>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-brain"></i> Частота кровавой луны
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-fire"></i> Дней: 5
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Диапозон кровавой луны
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Дней: 2
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Предупреждение о кровавой луне
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Утро
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Счётчик кровавой луны
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Враги: 12
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Дневная скорость зомби
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Бег трусцой
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Ночная скорость зомби
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Спринт
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Скорость диких зомби
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Спринт
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Скорость зомби в кровавую луну
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Спринт
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Чувствительность безумных зомби
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Ночь
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Режим запаха ИИ
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Бег
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Сброс груза с самолёта
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Каждые 3 дня
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Отметить сброс с самолёта
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Включено
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Прогресс в биоме
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> Включено
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Частота бурь
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-brain"></i> 150%
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Улучшенные настройки -->
+                    <div class="settings-card" style="--delay: 3" id="up">
+                        <div class="settings-card-header">
+                            <div class="settings-card-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="settings-card-title">Улучшенные настройки</h3>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Урон блока игрока
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 100%
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Урон блока ИИ
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 100%
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Урон блока ИИ во время кровавой луны
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 100%
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Изобилие добычи
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 100%
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Время повторного появления добычи
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Дней: 5
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Время сброса фрагмента
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Отключено
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Штраф смерти
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Пусто
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Потери при смерти
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Всё
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Потери при выходе
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Пусто
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Появление врагов
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Включено
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Творческий режим
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Выключено
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Лимит прогресса ежедневных заданий
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Без ограничений
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Ограничение режима камеры
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Отключено
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Возврат за банку
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 100%
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Многопользовательская игра -->
+                    <div class="settings-card" style="--delay: 3" id="players">
+                        <div class="settings-card-header">
+                            <div class="settings-card-icon">
+                                <i class="fa-solid fa-wifi"></i>
+                            </div>
+                            <h3 class="settings-card-title">Многопользовательская игра</h3>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Убийство игрока
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Убивать всех
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Размер притязания
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Блоки: 31
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Притязание на мёртвую зону
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Блоки: 30
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Продолжительность притязания
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Медленно
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Притязание на здоровье в сети
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 4x
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Притязание на здоровье не в сети
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 4x
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Задержка притязания в автономном режиме
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 0 минут
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Мёртвая зона спальника
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Блоки: 15
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Время действия спальника
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Дней: 15
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Дистанция общих убийств группы
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> Отключено
+                            </div>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label class="setting-label">
+                                <i class="fas fa-globe-americas"></i> Порт игры
+                            </label>
+                            <div class="setting-value">
+                                <i class="fas fa-percentage"></i> 26900
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
+    <!-- Скрипты -->
+    <script src="/Scripts/lava.js"></script>
+</body>
+
+</html>
+

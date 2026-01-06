@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соседи по Аду | Карта</title>
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="/CSS/map.css">
+    <link rel="stylesheet" href="/CSS/lava.css">
+
+    <!-- Лого -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../Images/Logo/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../Images/Logo/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../Images/Logo/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../Images/Logo/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../Images/Logo/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../Images/Logo/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../Images/Logo/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../Images/Logo/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Images/Logo/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../Images/Logo/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Images/Logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../Images/Logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Images/Logo/favicon-16x16.png">
+    <link rel="manifest" href="../Images/Logo/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section id="lava-effect"></section>
+
+    <main class="map-container">
+        <div class="map-content">
+            <div class="description-section">
+                <h1 class="description-title">Карта нашего сервера</h1>    
+                <h2 class="description-subtitle">Особенности карты</h2>
+                <p class="description-text">
+                    Карта показывает все города, дороги, данжи, водоёмы (реки + озёра), микро тропинки, горы,
+                    равнины и холмы. Смотря на неё вам не обязательно устанавливать различные моды на прогрузку всей карты или
+                    оббегать всю карту ради рассмотра её уже в игре. Размер карты 4096x4096. Каждый биом отличается между собой (больше информации см. ниже).
+                </p>
+                
+                <h2 class="description-subtitle">Биомы</h2>
+                <ul class="biomes-list">
+                    <li><span class="biome-color pine-forest"></span>20% - Сосновый лес. Самый благоприятный для проживания биом. Богат деревьями также, 
+                        здесь присутствуют заросли хризантемы, золотарника и хлопка. Климат биома весьма мягкий, с дождями средней частоты и 
+                        благоприятной температурой, но без одежды игроку будет холодно даже днём. Наиболее холодно ночью и ранним утром. Присутствуют источники 
+                        пресной воды: река и озеро. </li>
+                    <li><span class="biome-color burned-forest"></span>20% - Сгоревший лес. Очень похож на биом Пустошь. 
+                        Все деревья сожжены. По всей территории располагаются тлеющие ветки, брошенный мусор, шлакоблоки, залежи угля и легко 
+                        видимые из-за отсутствия травы птичьи гнезда. Уцелевших строений совсем немного - это однотипные двухэтажные домики из булыжника и дерева.</li>
+                    <li><span class="biome-color desert"></span>20% - Пустыня. Поверхность песчаного цвета. Локация практически без какой-либо растительности и 
+                        строений, за исключением автозаправки, небольшого поселка и завода. От других зон отличается самым неравномерным ландшафтом - 
+                        присутствуют как низины (каньоны), так и возвышенности (холмы). Из растительности имеются юкка, алоэ и кактусы.</li>
+                    <li><span class="biome-color snow"></span>20% - Снежный биом. Вся поверхность локации покрыта слоем снега толщиной в 1 блок. 
+                        На территории биома в относительно большом количестве растут ели и деревья. 
+                        Также сильно распространены кусты черники. Видеть на далёкие расстояния не позволяет туман, схожий с снежной бурей из-за постоянных 
+                        звуков сильного ветра.</li>
+                    <li><span class="biome-color wasteland"></span>20% - Пустошь. Здесь спавнится много зомби и собак, так же летают шершни, 
+                        именно здесь начинают встречаются зараженные полицейские. Характерная особенность биома - огромные груды разрушенного камня, 
+                        похожие на свалку. На окраинах биома всюду остатки зданий, остовы машин и сожженные деревья.</li>
+                </ul>
+            </div>
+            
+            <!-- Карта -->
+            <div class="image-section">
+                <div class="map-frame">
+                    <img src="/Images/map.jpg" alt="Карта" class="map-image">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/Scripts/lava.js"></script>
+</body>
+</html>

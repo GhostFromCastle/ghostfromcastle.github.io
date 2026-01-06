@@ -1,0 +1,59 @@
+.lava-drop{position:absolute;top:-100px;width:15px;height:25px;z-index:10;pointer-events:none;opacity:0;filter:drop-shadow(0 0 8px rgba(255,69,0,0.7))}
+.lava-drop::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,#FF2400 0,#FF4500 30%,#FF6347 60%,#FF8C00 90%,#FFA500 100%);border-radius:50% 50% 40% 40% / 60% 60% 40% 40%;clip-path:polygon(0% 0,100% 0,95% 20%,90% 40%,85% 60%,80% 80%,50% 95%,20% 80%,15% 60%,10% 40%,5% 20%,0% 0 );animation:lavaGlow 1.5s ease-in-out infinite alternate}
+.lava-drop::after{content:'';position:absolute;top:2px;left:3px;width:calc(100% - 6px);height:calc(100% - 4px);background:linear-gradient(180deg,rgba(255,255,255,0.4) 0,rgba(255,255,255,0.2) 30%,transparent 70%);border-radius:50% 50% 40% 40% / 60% 60% 40% 40%;clip-path:polygon(0% 0,100% 0,95% 20%,90% 40%,85% 60%,80% 80%,50% 95%,20% 80%,15% 60%,10% 40%,5% 20%,0% 0 )}
+@keyframes lavaFallFast{0%{opacity:0;transform:translateY(0) translateX(0) scale(0.8)}
+ 10%{opacity:0.9;transform:translateY(0) translateX(0) scale(1)}
+ 30%{transform:translateX(var(--sway-amount,0px))}
+ 70%{transform:translateX(calc(var(--sway-amount,0px) * -0.5))}
+ 90%{opacity:0.8}
+ 100%{opacity:0;transform:translateY(calc(100vh + 100px)) translateX(0) scale(0.6)}
+}
+@keyframes lavaFallMedium{0%{opacity:0;transform:translateY(0) translateX(0) scale(0.8)}
+ 10%{opacity:0.9;transform:translateY(0) translateX(0) scale(1)}
+ 40%{transform:translateX(var(--sway-amount,0px))}
+ 80%{transform:translateX(calc(var(--sway-amount,0px) * -0.3))}
+ 95%{opacity:0.7}
+ 100%{opacity:0;transform:translateY(calc(100vh + 100px)) translateX(0) scale(0.5)}
+}
+@keyframes lavaFallSlow{0%{opacity:0;transform:translateY(0) translateX(0) scale(0.8)}
+ 10%{opacity:0.9;transform:translateY(0) translateX(0) scale(1)}
+ 50%{transform:translateX(var(--sway-amount,0px))}
+ 90%{transform:translateX(calc(var(--sway-amount,0px) * -0.2))}
+ 98%{opacity:0.6}
+ 100%{opacity:0;transform:translateY(calc(100vh + 100px)) translateX(0) scale(0.4)}
+}
+@keyframes lavaGlow{0%{box-shadow:inset 0 0 15px rgba(255,255,255,0.3),0 0 20px rgba(255,36,0,0.6),0 0 40px rgba(255,69,0,0.4)}
+ 100%{box-shadow:inset 0 0 25px rgba(255,255,255,0.4),0 0 30px rgba(255,36,0,0.8),0 0 60px rgba(255,69,0,0.6)}
+}
+.lava-tail{position:absolute;top:-20px;left:50%;transform:translateX(-50%);width:8px;height:40px;background:linear-gradient(to bottom,transparent 0,rgba(255,69,0,0.6) 30%,rgba(255,69,0,0.3) 70%,transparent 100%);border-radius:4px;opacity:0;filter:blur(1px)}
+.lava-drop.tiny{width:8px;height:12px}
+.lava-drop.small{width:12px;height:18px}
+.lava-drop.medium{width:18px;height:28px}
+.lava-drop.large{width:25px;height:40px}
+.lava-drop.huge{width:35px;height:55px}
+.lava-spark{position:absolute;width:4px;height:4px;background:radial-gradient(circle,rgba(255,255,255,0.9) 0,rgba(255,140,0,0.6) 70%,transparent 100%);border-radius:50%;opacity:0;filter:blur(0.5px);z-index:11}
+@keyframes sparkFall{0%{opacity:0;transform:translateY(0) scale(0.5)}
+ 20%{opacity:1;transform:translateY(0) scale(1)}
+ 80%{opacity:0.7}
+ 100%{opacity:0;transform:translateY(calc(100vh + 50px)) scale(0.5)}
+}
+@keyframes lavaDribble{0%,100%{transform:translateY(0) scaleY(1)}
+ 25%{transform:translateY(2px) scaleY(0.95) scaleX(1.05)}
+ 50%{transform:translateY(0) scaleY(1.1) scaleX(0.95)}
+ 75%{transform:translateY(-1px) scaleY(0.98) scaleX(1.02)}
+}
+.lava-drop.falling{animation:lavaDribble 0.3s ease-in-out infinite}
+@media (max-width:768px){.lava-drop{width:10px;height:16px}
+ .lava-drop.large{width:18px;height:28px}
+ .lava-drop.huge{width:24px;height:38px}
+}
+@media (max-height:600px){.lava-drop{width:10px;height:16px}
+ .lava-drop.large{width:16px;height:25px}
+ .lava-drop.huge{width:22px;height:35px}
+}
+@media (max-width:480px){.lava-drop{width:8px;height:12px}
+}
+@media (max-width:360px){.lava-drop{width:6px;height:10px}
+ .lava-drop.large{width:12px;height:20px}
+ .lava-drop.huge{width:18px;height:28px}
+}
